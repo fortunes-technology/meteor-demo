@@ -6,11 +6,9 @@ Meteor.startup(() => {
     console.log("Meteor.startup");
     if (Meteor.users.find({}).count() === 0) {
         let user = {
-            username: 'User',
             email: 'user@gmail.com',
             password: 'password',
-            firstName: 'Test',
-            lastName: 'User',
+            name: 'Test User',
         };
         Accounts.createUser(user);
     }
