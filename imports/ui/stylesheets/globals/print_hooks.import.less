@@ -1,0 +1,39 @@
+
+
+// Print Panel
+.content-item-print {
+  width: 50%;
+  padding: 5px;
+}
+.content-item-print .content {
+  border: 1px solid #e7eaec;
+  padding: 10px;
+  display: flex;
+}
+//.content-item-print .content > div {
+//  width: 50%;
+//}
+
+.hooks-print-page {
+  display: flex !important;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content-item-print .content .identicon-number-container {
+  position: relative;
+}
+.content-item-print .content .identicon-number-container .number {
+  position: absolute;
+  font-size: 240px;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  color: black;
+  -webkit-filter: drop-shadow(-3px 0px white) drop-shadow(0px 3px white) drop-shadow(3px 0px white) drop-shadow(0px -3px white);//, drop-shadow(5px 0px white), opacity(1);
+  //text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  //-webkit-print-color-adjust:exact;
+  //-webkit-filter:opacity(1);
+}

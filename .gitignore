@@ -1,0 +1,6 @@
+
+# Capture files / patterns for exclusion here
+.idea
+settings*.json
+*.log
+node_modules

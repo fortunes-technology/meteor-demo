@@ -1,0 +1,20 @@
+<template name="home">
+    <div class="wrapper wrapper-content animated fadeInRight row  border-bottom white-bg dashboard-header home-page">
+
+        <div class="contact-group col-md-12">
+            <h5>Contacts</h5>
+            <div>
+                <a href="/contacts/new">Add New Contact</a>
+                <table class="table table-bordered">
+                    <thead><th>Name</th><th>Phone</th><th>Email</th><th>Action</th></thead>
+                    <tbody>
+                        {{#each contacts}}
+                            {{> contactItem }}
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</template>

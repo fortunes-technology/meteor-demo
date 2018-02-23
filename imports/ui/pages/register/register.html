@@ -1,0 +1,29 @@
+<template name="register">
+    <div class="middle-box text-center loginscreen animated fadeInDown row  border-bottom white-bg dashboard-header ">
+        <div>
+                <h3 class="logo-name login-page-logo">Test Project By Fortunes Technology</h3>
+        </div>
+        <h3>Register for a new account.</h3>
+
+        <form class="m-t" role="form" action="" id="register-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name" required="" name="name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" required="" name="email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" required="" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b ladda-button" data-style="zoom-in">Register</button>
+
+            <p class="text-muted text-center">
+                <small>Already have an account?</small>
+            </p>
+            <a class="btn btn-sm btn-primary btn-block" href="/login">Login</a>
+        </form>
+        <p class="m-t">
+            <small>Test Project &copy; 2018</small>
+        </p>
+    </div>
+</template>

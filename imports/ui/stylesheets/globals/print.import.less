@@ -1,0 +1,103 @@
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .page-heading {
+    display: none;
+  }
+  #__blaze-root {
+    display: none !important;
+  }
+  #wrapper {
+    padding-top: 0px !important;
+    height: 0px !important;
+    display: none !important;
+  }
+  table {float: none !important; }
+  div {  position: relative !important;}
+
+  #section-to-print, #section-to-print * {
+    visibility: visible;
+  }
+  #section-to-print {
+    position: relative !important;
+    left: 0;
+    top: 0;
+  }
+  #section-to-print .print-content {
+    //position: relative;;
+  }
+  /*
+  .print-content .col-lg-6 {
+    width: 50%;
+    //float: left;
+  }*/
+/*  .print-content .col-sm-6 {
+    width: 50%;
+    //float: left;
+  }*/
+/*  .content-item-print {
+    width: 50%;
+  }*/
+/*
+  .hooks-print-page {
+    display: flex !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }*/
+  .print-content .pgbreakafter
+  {
+    page-break-after: always;
+    display: block;
+    position: relative;
+  }
+  .pgbreakbefore
+  {
+    display: block;
+    position: relative;
+    page-break-before: always;
+  }
+  .content-item-print .content .identicon-number-container .number {
+    position: absolute !important;
+    //-webkit-print-color-adjust:exact;
+    //-webkit-filter: drop-shadow(1px 1px 1px 1px white);
+    //-webkit-filter: drop-shadow(-1px 0 1px white, 0 1px 1px white, 1px 0 1px white, 0 -1px 1px white);
+    color: red;
+  }
+}
+//body * {
+//  visibility: hidden;
+//}
+//
+//table {float: none !important; }
+//div {  position: relative !important;}
+//
+//#section-to-print, #section-to-print * {
+//  visibility: visible;
+//}
+//#section-to-print {
+//  position: absolute  !important;
+//  left: 0;
+//  top: 0;
+//}
+//#section-to-print .print-content {
+//  //position: relative;;
+//}
+//.print-content .col-lg-6 {
+//  width: 50%;
+//  float: left;
+//}
+//.print-content .col-sm-6 {
+//  width: 50%;
+//  float: left;
+//}
+//
+//.print-content .pgbreakafter
+//{
+//  page-break-after: always;
+//}
+//.pgbreakbefore
+//{
+//  page-break-before: always;
+//}

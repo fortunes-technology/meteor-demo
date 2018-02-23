@@ -1,0 +1,57 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+//@import '{}/node_modules/sweetalert2/dist/sweetalert2.css';
+
+// Variables, Mixins
+@import "globals/variables.import.less";
+@import "globals/mixins.import.less";
+
+@import "globals/navigation.import.less";
+@import "globals/top_navigation.import.less";
+@import "globals/buttons.import.less";
+@import "globals/elements.import.less";
+@import "globals/sidebar.import.less";
+@import "globals/base.import.less";
+@import "globals/pages.import.less";
+@import "globals/metismenu.import.less";
+
+// Landing page
+@import "globals/landing.import.less";
+
+
+@import "globals/skins.import.less";
+@import "globals/md-skin.import.less";
+
+// Media query style
+@import "globals/media.import.less";
+@import "globals/print_hooks.import.less";
+@import "globals/print.import.less";
+
+// Custom style
+// Your custom style to override base style
+@import "globals/custom.import.less";
+@import "pages/index.less";
+
+// Clear layout on print mode
+@media print {
+  nav.navbar-static-side {
+    display: none;
+  }
+
+  body { overflow: visible !important; }
+
+  #page-wrapper {
+    margin: 0;
+  }
+}
+
+// Mobile 
+
+#qual-gear {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+#qual-div {
+	font-family: "Libel Suit";
+}
